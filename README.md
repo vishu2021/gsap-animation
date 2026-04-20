@@ -2,6 +2,8 @@
 A comprehensive collection of **90+ advanced animations and interactive UI effects** built using **GSAP (GreenSock Animation Platform)**.
 This repository demonstrates real-world animation techniques used in modern web applications including scroll-based animations, timelines, sliders, and micro-interactions.
 ---
+![GSAP Demo](https://i.ytimg.com/vi/L4tUG7Jk6g0/sddefault.jpg)
+---
 ## 🚀 Features
 - 🎯 Advanced GSAP animations
 - 🎞 Smooth transitions & motion design
@@ -70,9 +72,8 @@ This repository demonstrates real-world animation techniques used in modern web 
 ## 📸 Preview (Add Screenshots)
 > Replace below images with your project screenshots
 ### 🖼 Example Animation
-![GSAP Demo](./assets/demo1.gif)
+![GSAP Demo](https://gsap.com/GSAP-share-image.png)
 ### 🎬 Scroll Animation
-![Scroll Demo](./assets/demo2.gif)
 ---
 ## 🚀 Getting Started
 1. Clone the repository
