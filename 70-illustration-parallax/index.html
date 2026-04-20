@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Illustration parallax on hero section | HTML5, SCSS, JavaScript, GSAP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+   <header class="header">
+      <div class="left-wrap">
+        <span class="header-text js-header-text">
+          Unusual Stories.
+        </span>
+      </div>
+      <div class="right-wrap">
+        <ul class="header-menu js-header-menu">
+          <li class="header-link">Tales</li>
+          <li class="header-link">About</li>
+          <li class="header-link">Contacts</li>
+        </ul>
+      </div>
+   </header>
+  <main>
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/parallax-sky.png"/>
+      </div>
+      <div class="hero-parallax">
+        <div class="parallax-item parallax-tree">
+          <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/parallax-tree.png"/>
+        </div>
+        <div class="parallax-item parallax-castle">
+          <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/parallax-castle.png"/>
+        </div>
+        <div class="parallax-item parallax-mountains">
+          <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/parallax-moutains.png"/>
+        </div>
+      </div>
+      <div class="container">
+        <div class="subtitle js-anim-subtitle">
+          <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/subtitle-left-arrow.svg" class="subtitle-left-arrow">
+          <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/subtitle-right-arrow.svg" class="subtitle-right-arrow">
+          <div class="subtitle-bg">
+            <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/subtitle-bg.png">
+          </div>
+          <span class="btn-1">The Good Knight</span>
+        </div>
+        <div class="title-block">
+          <h1 class="title-h1 js-anim-title">The Story of the Dilmays Kingdom</h1>
+        </div>
+        <div class="text-block">
+          <p class="desc-1 js-anim-desc">
+            King Olav is old and has only his kingdom. His daughter was kidnapped 
+by the dragon Liuf. He has declared five trials: strength, honesty, generosity, courage, and sympathy.
+          </p>
+        </div>
+        
+        <div class="btn-block">
+          <div class="btn">
+            <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/btn-left-arrow.svg" class="btn-right-arrow">
+            <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/btn-right-arrow.svg" class="btn-left-arrow">
+            <div class="btn-bg">
+              <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/btn-bg.png">
+            </div>
+            <span class="btn-2">Start the story</span>
+        </div>
+        </div>
+      </div> 
+    </section>
+  </main>
+  <footer>
+    <div class="left-wrap">
+      <span class="footer-link">Privacy policy</span>
+      <span class="divider"></span>
+      <span class="footer-link">Terms and conditions</span>
+    </div>
+    <div class="center-wrap">
+      <span class="footer-link">© 2022, Zajno</span>
+    </div>
+    <div class="right-wrap">
+      <a href="https://www.facebook.com/zajnocrew/" class="social-icon facebook-icon" target="_blank">
+        <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/facebook.svg">
+      </a>
+      <a href="https://www.instagram.com/zajno/" class="social-icon insta-icon" target="_blank">
+        <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/insta.svg">
+      </a>
+      <a href="https://twitter.com/ZajnoCrew" class="social-icon twitter-icon" target="_blank">
+        <img src="https://cdn.zajno.com/dev/codepen/story-dilmays/twitter.svg">
+      </a>
+    </div>
+  </footer>
+</body>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+<script src='https://assets.codepen.io/16327/CustomEase3.min.js'></script>
+<script src='https://assets.codepen.io/16327/SplitText3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

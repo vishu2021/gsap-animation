@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Inter";
+}
+html {
+  font-size: 6.9444444444vw;
+}
+
+:root {
+  --main-font: "Inter", sans-serif;
+  --black: #000;
+  --white: #fff;
+  --grey: #7d7d7d;
+  --greyLight: #cbcbcb;
+}
+
+body {
+  font-size: 18px;
+  font-family: var(--main-font);
+  background: var(--black);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.title {
+  color: var(--black);
+  font-family: var(--main-font);
+  font-size: var(--font-size-h1);
+  font-weight: 300;
+  letter-spacing: var(--letter-spacing-h1);
+  line-height: var(--line-height-h1);
+}
+
+.title-h2 {
+  color: var(--black);
+  font-family: var(--main-font);
+  font-size: var(--font-size-h2);
+  font-weight: normal;
+  letter-spacing: var(--letter-spacing-h2);
+  line-height: var(--line-height-h2);
+}
+
+.up-text {
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+img {
+  display: block;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+}
+
+/* extra long transition to hide blue autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus {
+  -webkit-transition: background-color 100000000000000000000000000000s 0s, color 100000000000000000000000000000s 0s;
+  transition: background-color 100000000000000000000000000000s 0s, color 100000000000000000000000000000s 0s;
+}
+
+/* Remove Safari autofill*/
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel],
+textarea {
+  /* remove autofill blue background */
+  box-shadow: inset 0 0 0 150px rgba(255, 255, 255, 0) !important;
+  -webkit-box-shadow: inset 0 0 0 150px rgba(255, 255, 255, 0) !important;
+  -webkit-text-fill-color: currentColor !important;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: transparent;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--grey);
+  padding: 0 1.1rem;
+  padding: 0.8rem 1.5rem 0.4rem;
+}
+.about-subtitle {
+  font-size: 0.15rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0;
+}
+.about-text {
+  font-size: 0.64rem;
+  text-align: center;
+  margin-top: 0.3rem;
+  letter-spacing: -0.0384rem;
+  opacity: 0;
+}
+.about-text .split-line {
+  opacity: 0;
+}
+.about-hover {
+  position: relative;
+  display: inline-block;
+  color: var(--greyLight);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+  padding-right: 1.75rem;
+}
+.about-hover.unhover {
+  padding-right: 0;
+}
+.about-hover.unhover .about-img {
+  right: -0.1rem;
+  width: 0;
+}
+.about-hover.unhover .about-img img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.about-img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  display: block;
+  width: 1.6rem;
+  height: 0.65rem;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.about-down {
+  width: 0.6rem;
+  margin-top: 0.55rem;
+  opacity: 0;
+}
+.about-down img {
+  width: 100%;
+}

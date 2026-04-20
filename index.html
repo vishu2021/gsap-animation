@@ -1,0 +1,512 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <title>GSAP Animation</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+      * {
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #222;
+      }
+      main {
+        padding: 10px 10px 0;
+      }
+      h1 {
+        text-align: center;
+        margin: 0;
+        padding: 30px;
+      }
+      h1 a {
+        color: #fff;
+        font-size: 30px;
+        line-height: 1.6;
+        display: inline-block;
+        font-weight: normal;
+        font-weight: 700;
+      }
+      h1 a strong {
+        color: yellow;
+        font-weight: 800;
+      }
+      .hero {
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #333;
+      }
+      .hero ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        counter-reset: section;
+        list-style-type: none;
+      }
+      .hero ul li {
+        padding: 0;
+        flex: 0 0 auto;
+        width: 20%;
+        position: relative;
+        border: 2px solid #444;
+      }
+      .hero ul li::before {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        position: absolute;
+        left: 0;
+        top: 0;
+        counter-increment: section;
+        content: counters(section, ".") ". ";
+        background: #222;
+        width: 50px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        transition: all 1s ease;
+      }
+      .hero ul li:hover::before {
+        color: #000;
+        background: #d1d100;
+      }
+      .hero ul li a {
+        display: flex;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 10px 10px 60px;
+        border-radius: 0;
+        text-decoration: none;
+        background-color: #000;
+        transition: all 1s ease;
+        height: 100%;
+        align-items: center;
+        width: 100%;
+        text-transform: capitalize;
+      }
+      .hero ul li:hover a {
+        color: #000;
+        background-color: #ffff00;
+      }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #333;
+      }
+      .new-box-wrap {
+        background-color: #333;
+        width: 100%;
+        padding: 20px;
+        margin-top: 30px;
+      }
+      .new-box-wrap p {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 800;
+        margin: 0 0 10px;
+        text-align: center;
+      }
+      .new-box-wrap-btns {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+      .new-box-wrap-btns li {
+        padding: 4px;
+        flex: 0 0 auto;
+      }
+      .new-box-wrap-btns li a {
+        display: flex;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 30px;
+        border-radius: 100px;
+        text-decoration: none;
+        background-color: #000;
+        transition: all 1s ease;
+        height: 100%;
+        align-items: center;
+        width: 100%;
+        font-weight: 600;
+      }
+      .new-box-wrap-btns li a:hover {
+        color: #000;
+        background-color: yellow;
+      }
+      @media screen and (max-width: 767px) {
+        main,
+        .hero {
+          padding: 10px;
+        }
+        .hero ul {
+          flex-direction: column;
+        }
+        .hero ul li {
+          width: 100%;
+        }
+        .new-box-wrap p {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .hero ul li {
+          width: 33.33333%;
+        }
+        .new-box-wrap p {
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>
+        <a> <strong>GSAP </strong> Projects</a>
+      </h1>
+      <section class="hero">
+        <ul>
+          <li>
+            <a href="01-sidebar" target="_blank">  sidebar </a>
+          </li>
+          <li>
+            <a href="02-tween" target="_blank"> tween</a>
+          </li>
+          <li>
+            <a href="03-set-method" target="_blank">  set method</a>
+          </li>
+          <li>
+            <a href="04-fromandfromtomethods" target="_blank"> from and from to methods</a>
+          </li>
+          <li>
+            <a href="05-staggers" target="_blank"> staggers </a>
+          </li>
+          <li>
+            <a href="06-controllingTweens" target="_blank"> controlling Tweens</a>
+          </li>
+          <li>
+            <a href="07-timelines" target="_blank"> timelines </a>
+          </li>
+          <li>
+            <a href="08-basic-project" target="_blank"> basic project</a>
+          </li>
+          <li>
+            <a href="09-landing-page" target="_blank"> landing page </a>
+          </li>
+          <li>
+            <a href="10-starter-template" target="_blank"> starter template</a>
+          </li>
+          <li>
+            <a href="11-overlay-slider" target="_blank"> overlay slider </a>
+          </li>
+          <li>
+            <a href="12-scroll-smooth-image" target="_blank"> scroll smooth image</a>
+          </li>
+          <li>
+            <a href="13-circular-clip-path" target="_blank"> circular clip path </a>
+          </li>
+          <li>
+            <a href="14-text-fill" target="_blank"> text fill</a>
+          </li>
+          <li>
+            <a href="15-scramble-text" target="_blank"> scramble text </a>
+          </li>
+          <li>
+            <a href="16-vertical-loop" target="_blank"> vertical loop</a>
+          </li>
+          <li>
+            <a href="17-count" target="_blank"> count</a>
+          </li>
+          <li>
+            <a href="18-mouse-scroll-section" target="_blank"> mouse scroll section </a>
+          </li>
+          <li>
+            <a href="19-parallax-scroll" target="_blank"> parallax scroll</a>
+          </li>
+          <li>
+            <a href="20-toggle-tween-lottie" target="_blank"> toggle tween lottie </a>
+          </li>
+          <li>
+            <a href="21-swiper-slider" target="_blank"> swiper slider</a>
+          </li>
+          <li>
+            <a href="22-horizontal-scroll-loop" target="_blank"> horizontal scroll loop </a>
+          </li>
+          <li>
+            <a href="23-mouse-follow-effect" target="_blank"> mouse follow effect</a>
+          </li>
+          <li>
+            <a href="24-scrolling-and-pin" target="_blank"> scrolling and pin</a>
+          </li>
+          <li>
+            <a href="25-rever-to-update" target="_blank"> revert to update </a>
+          </li>
+          <li>
+            <a href="26-masonry-grid-with-flip-and-tween" target="_blank"> masonry grid with flip and tween</a>
+          </li>
+          <li>
+            <a href="27-horizontal-scroll-sections" target="_blank">  horizontal scroll sections</a>
+          </li>
+          <li>
+            <a href="28-horizontal-loop-blocks" target="_blank"> horizontal loop blocks</a>
+          </li>
+          <li>
+            <a href="29-animated-header" target="_blank"> animated header </a>
+          </li>
+          <li>
+            <a href="30-pin-and-progress-timeline" target="_blank"> pin and progress timeline</a>
+          </li>
+          <li>
+            <a href="31-count-on-scroll" target="_blank"> count on scroll</a>
+          </li>
+          <li>
+            <a href="32-scroll-trigger-tab-layers" target="_blank">  scroll trigger tab layers</a>
+          </li>
+          <li>
+            <a href="33-box-resize-horizontal" target="_blank"> box resize horizontal</a>
+          </li>
+          <li>
+            <a href="34-mouse-movement" target="_blank"> mouse movement </a>
+          </li>
+          <li>
+            <a href="35-test-scroll-trigger" target="_blank"> test scroll trigger</a>
+          </li>
+          <li>
+            <a href="36-sticky-header-template" target="_blank"> sticky header template </a>
+          </li>
+          <li>
+            <a href="37-horizontal-scroll-items" target="_blank"> horizontal scroll items</a>
+          </li>
+          <li>
+            <a href="38-image-scale-rotation-full-screen" target="_blank"> image scale rotation full screen</a>
+          </li>
+          <li>
+            <a href="39-clamp-mouse-follow" target="_blank">  clamp mouse follow</a>
+          </li>
+          <li>
+            <a href="40-layers-pinned-with-blur-effects" target="_blank"> layers pinned with blur effects</a>
+          </li>
+          <li>
+            <a href="41-image-animation-on-scroll" target="_blank"> image animation on scroll </a>
+          </li>
+          <li>
+            <a href="42-translate-y" target="_blank"> translate y</a>
+          </li>
+          <li>
+            <a href="43-section-animation-with-text" target="_blank">  section animation with text</a>
+          </li>
+          <li>
+            <a href="44-layers-pinned" target="_blank"> layers pinned</a>
+          </li>
+          <li>
+            <a href="45-mouse-hover-effects" target="_blank"> mouse hover effects</a>
+          </li>
+          <li>
+            <a href="46-drag-circle" target="_blank"> drag circle </a>
+          </li>
+          <li>
+            <a href="47-effects-on-scroll" target="_blank"> effects on scroll</a>
+          </li>
+          <li>
+            <a href="48-infinite-draggable-scroll" target="_blank"> infinite draggable scroll </a>
+          </li>
+          <li>
+            <a href="49-news-ticker" target="_blank"> news ticker</a>
+          </li>
+          <li>
+            <a href="50-sticky-siblings-scroll" target="_blank"> sticky siblings scroll </a>
+          </li>
+          <li>
+            <a href="51-morphing-button" target="_blank"> morphing  button</a>
+          </li>
+          <li>
+            <a href="52-flip-image-onclick" target="_blank"> flip image onclick</a>
+          </li>
+          <li>
+            <a href="53-draggable-observer" target="_blank"> draggable observer </a>
+          </li>
+          <li>
+            <a href="54-menu-scroll-to-section" target="_blank"> menu scroll to section</a>
+          </li>
+          <li>
+            <a href="55-scroll-animation-image" target="_blank"> scroll animation image </a>
+          </li>
+          <li>
+            <a href="56-vertically-draggable-modal" target="_blank"> vertically draggable modal</a>
+          </li>
+          <li>
+            <a href="57-resize-video-on-page-scroll" target="_blank">  resize video on page scroll</a>
+          </li>
+          <li>
+            <a href="58-circular-path-motion" target="_blank"> circular path motion</a>
+          </li>
+          <li>
+            <a href="59-amoeba-blob" target="_blank"> amoeba blob</a>
+          </li>
+          <li>
+            <a href="60-box-horizontal-motion-onscroll" target="_blank">  box horizontal motion onscroll</a>
+          </li>
+          <li>
+            <a href="61-autorotate-carousel" target="_blank"> auto rotate carousel</a>
+          </li>
+          <li>
+            <a href="62-parallex-scrolling" target="_blank"> parallax scrolling </a>
+          </li>
+          <li>
+            <a href="63-resize-letter-smooth" target="_blank"> resize letter smooth</a>
+          </li>
+          <li>
+            <a href="64-scrolltrigger-carousel-scrollsmoother" target="_blank"> scroll trigger carousel scroll smoother </a>
+          </li>
+          <li>
+            <a href="65-stacking-card-animation-effect" target="_blank"> stacking card animation effect</a>
+          </li>
+          <li>
+            <a href="66-boxes-in-motion" target="_blank"> boxes in motion</a>
+          </li> 
+          <li>
+            <a href="67-inview-text-animation " target="_blank">  inview text animation </a>
+          </li> 
+          <li>
+            <a href="68-mousemove-mirror-effect " target="_blank">  mousemove mirror effect </a>
+          </li> 
+          <li>
+            <a href="69-venetian-blinds-effect " target="_blank">  venetian blinds effect </a>
+          </li> 
+          <li>
+            <a href="70-illustration-parallax " target="_blank">  illustration parallax </a>
+          </li> 
+          <li>
+            <a href="71-trigger-smooth-scroll " target="_blank">   trigger smooth scroll</a>
+          </li> 
+          <li>
+            <a href="72-scroll-trigger-split-text " target="_blank">  scroll trigger split text </a>
+          </li> 
+          <li>
+            <a href="73-photo-animation-hovering " target="_blank"> photo animation hovering </a>
+          </li> 
+          <li>
+            <a href="74-sliced-text-effect " target="_blank">  sliced text effect </a>
+          </li> 
+          <li>
+            <a href="75-PixelGooeyTooltip " target="_blank"> Pixel Gooey Tooltip </a>
+          </li> 
+          <li>
+            <a href="76-LayersAnimation " target="_blank">  Layers Animation </a>
+          </li> 
+          <li>
+            <a href="77-MotionTrailAnimations" target="_blank">Motion Trail Animations  </a>
+          </li> 
+          <li>
+            <a href="78-GridItemHoverEffect" target="_blank">  Grid Item Hover Effect </a>
+          </li> 
+          <li>
+            <a href="79-DoubleSlideshow" target="_blank"> Double Slideshow  </a>
+          </li> 
+          <li>
+            <a href="80-OnScrollFilter" target="_blank">  On Scroll Filter </a>
+          </li> 
+          <li>
+            <a href="81-TextBlockTransitions" target="_blank"> Text Block Transitions  </a>
+          </li> 
+          <li>
+            <a href="82-ScrollBasedLayoutAnimations " target="_blank"> Scroll Based Layout Animations  </a>
+          </li> 
+          <li>
+            <a href="83-GridFlowEffect " target="_blank">  Grid Flow Effect </a>
+          </li> 
+          
+          <li>
+            <a href="84-Scroll3DGrid" target="_blank">  Scroll 3D Grid </a>
+          </li> 
+          <li>
+            <a href="85-OnScrollColumnsRows " target="_blank">  On Scroll Columns Rows </a>
+          </li> 
+          <li>
+            <a href="86-ConnectedGrid " target="_blank"> Connected Grid  </a>
+          </li> 
+          <li>
+            <a href="87-tiles-scroll " target="_blank">  tiles  scroll </a>
+          </li> 
+          <li>
+            <a href="88-column-scroll " target="_blank"> column scroll  </a>
+          </li>
+          <li>
+            <a href="89-infinite-scrolling" target="_blank"> infinite scrolling  </a>
+          </li>
+          <li>
+            <a href="89-infinite-scrolling" target="_blank"> infinite scrolling  </a>
+          </li>
+          <li>
+            <a href="90-scroll-trigger" target="_blank"> scroll trigger  </a>
+          </li>
+          <li>
+            <a href="91-intro" target="_blank">  intro  </a>
+          </li>
+          <li>
+            <a href="92-scrolltrigger-accordion " target="_blank">  scroll trigger accordion </a>
+          </li>
+          <li>
+            <a href="93-selected-demos " target="_blank"> selected demos   </a>
+          </li>
+          <li>
+            <a href="94-scrolling-letters " target="_blank"> scrolling letters   </a>
+          </li>
+          <li>
+            <a href="94-scrolling-letters " target="_blank"> scrolling letters   </a>
+          </li> 
+          <li>
+            <a href="https://codepen.io/collection/DkvGzg " target="_blank"> Scroll Trigger Showcase  </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/collection/KpNYOd" target="_blank">Observer Showcase </a>
+          </li>
+          
+          
+          <li>
+            <a href="https://codepen.io/GreenSock/pens/public " target="_blank"> GreenSock  </a>
+          </li> 
+          <li>
+            <a href="https://codepen.io/topic/gsap/templates " target="_blank">   Templates  </a>
+          </li> 
+          
+          <li>
+            <a href="https://gsap.com/docs/v3/" target="_blank">Documentation </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+   
+  
+   
+  </body>
+</html>

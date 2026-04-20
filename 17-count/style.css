@@ -1,0 +1,41 @@
+$brand-one: #85dbda;
+$brand-two: #f53;
+$brand-light: #fff;
+$brand-dark: #0c162d;
+$brand-grey: #637192;
+$base-margin: 15px;
+//------------------------------------------------------//
+// Reset
+//------------------------------------------------------//
+* {
+  box-sizing: border-box;
+}
+body {
+  // overflow: hidden;
+}
+a {
+  color: $brand-light;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $base-margin;
+}
+// END Reset -------------------------------------//
+body {
+display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  > * {
+  font-size: 36px;
+align-self: center;    
+  padding: $base-margin *4;
+    text-align: center;
+  }
+}
+
+.data {
+}

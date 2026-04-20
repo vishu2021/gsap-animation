@@ -1,0 +1,20 @@
+body {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  height: 100vh;
+}
+.container {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.panel {
+  flex-direction: column;
+}
+.fade-out-text {
+  color: white !important;
+}

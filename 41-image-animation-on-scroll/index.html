@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by GSAP</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div style="position:fixed;width:100%;height:120px;background:blue;z-index:1;">Header</div>
+<div style="height:120px;width:100%;">M</div>
+<div id="scrollAnimation" class="relative">
+  <div id="svgDiv" class="container">
+    <div class="zoom text-center">
+      <h1 class="h1 text-regal">The Campano Collection</h1>
+      <div class="subHeader">
+        <div class="paragraph">Rooted in Nature. Crafted to Inspire</div>
+      </div>
+    </div>
+    <div class="svgContainer">
+      <svg id="mySVG" class="" width="1714" height="2417" viewBox="0 0 1714 2417">
+        <path class="myPath" data-name="Path 5143" d="m1.5,24.71h386.96c12.35,0,24.32-4.24,33.92-12l8.75-7.08c4.88-2.71,10.36-4.13,15.94-4.13h546.36c5.85,0,11.52,2,16.07,5.68l31.92,25.76c2.46,2.18,2.69,5.94.51,8.41-1.13,1.28-2.75,2.01-4.46,2.01H393.36c-8.03,0-15.45,4.28-19.48,11.22l-10.82,18.66c-2.62,4.52-1.07,10.31,3.45,12.93,1.44.83,3.07,1.27,4.73,1.27h25.76c6.7,0,12.14,5.43,12.15,12.13.08,42.13.37,179.77.88,182.94,2.46,15.3,21.95,20.34,31.52,8.16,5.14-4.96,69.59-140.98,86.2-176.15,1.36-2.88.13-6.32-2.76-7.68-.77-.36-1.62-.55-2.47-.55h-.14c-2.27-.01-4.35,1.29-5.33,3.34-11.47,24.09-81.4,170.37-81.4,170.37-2.11,3.88-6.97,5.32-10.85,3.2-2.55-1.39-4.15-4.05-4.18-6.96V107.16c0-10.89,8.83-19.73,19.73-19.73h556.22c10.89,0,19.73,8.83,19.73,19.72v169.08c-.03,4.42-3.64,7.97-8.06,7.94-2.91-.02-5.58-1.62-6.97-4.18l-81.45-170.52c-.93-1.95-2.9-3.19-5.06-3.19h-.16c-3.24-.01-5.87,2.61-5.88,5.85,0,.87.19,1.74.56,2.53,16.8,35.38,80.96,171.06,86.1,176.01,9.58,12.18,29.06,7.13,31.52-8.16.51-3.17.8-140.81.88-182.94.01-6.7,5.45-12.13,12.15-12.13h27.18c5.49,0,9.93-4.45,9.93-9.93,0-1.97-.59-3.9-1.69-5.54l-7.28-10.9c-2.04-3.06-1.22-7.2,1.84-9.25,1.1-.73,2.38-1.12,3.7-1.12h166.74c16.24,0,29.4,13.16,29.4,29.4v790.76c0,11.02-8.94,19.95-19.96,19.95,0,0-130.82-4.47-125.58,52.82,2.03,22.22,25.52,32.93,44.29,38.37,27.05,7.85,55.57,10.42,83.64,9.02,26.41-1.32,54.98-5.55,79.58-15.67,4.19-1.7,8.23-3.76,12.08-6.15,6.64-4.18,13.17-11.3,12.17-19.82-1.06-8.95-9.64-15.81-16.59-20.7-7.98-5.61-17.33-8.97-26.74-11.52-37.53-10.15-75.73-9.89-115.45-5.1-10.94,1.26-21.7,3.79-32.06,7.54-8.15,3-16.88,9.18-15.35,19.57.79,4.83,3.5,9.14,7.51,11.95,17.6,12.67,40.16,15.68,61.24,16.35,22.35.71,44.7-1.36,66.54-6.17,12.16-2.68,24.17-5.95,36.25-8.97,11.09-2.78,26.43.91,26.43,15.29v202.34c.01,6.74-3.35,13.05-8.95,16.8-104.87,69.65-183.73,19.75-207.78.49-4.82-3.85-7.63-9.67-7.64-15.84v-177.47c-.04-3.79,1.27-7.48,3.71-10.39,2.67-3.1,6.55-5.2,10.89.16,2.33,2.94,3.58,6.6,3.54,10.35v261.84c0,15.72-12.75,28.47-28.47,28.47h-147.53c-14.18,0-25.68,11.5-25.68,25.68h0v750.81c0,9.54,7.74,17.28,17.28,17.28h0c7.73,0,15.2-6.06,21.75-9.67,6-3.31,9.36-4.03,16.11-4.03h657.68c6.34,0,12.55,1.77,17.94,5.12l34.57,27.64c.92.57,1.2,1.77.63,2.69-.36.57-.99.92-1.66.92h-756.04c-6.63,0-12,5.37-12,12v9.16c0,6.63,5.37,12,12,12h49.85c5.62,0,10.18,4.56,10.18,10.18h0v263.26c0,4.51,3.66,8.16,8.16,8.16h12.3c4.41,0,8.02-3.51,8.16-7.91l7.96-262.73c.17-5.5,4.67-9.87,10.18-9.87h536.25c5.51,0,10.02,4.37,10.18,9.88l7.96,262.72c.13,4.41,3.75,7.91,8.16,7.91h12.31c4.51,0,8.16-3.65,8.16-8.16v-263.25c0-5.63,4.56-10.19,10.19-10.19h51.9c7.36,0,13.33-5.97,13.33-13.33" fill="none" stroke="#907258" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3" />
+      </svg>
+      <div class="fadeDiv fadeIn-top-table">
+        <img class="water-color" src="https://s3.us-west-1.amazonaws.com/willow-park-images/WP-Watercolor-Accent-Table.jpg?v=1701350999">
+        <div class="fadeIn-text">
+          <h2>Accent Table</h2>
+          <p>Perfect for lounge areas</p>
+        </div>
+      </div>
+      <div class="fadeDiv fadeIn-stool">
+        <img class="water-color" src="https://s3.us-west-1.amazonaws.com/willow-park-images/WP-Watercolor-Stool-Table.jpg?v=1701351003 ">
+        <div class="fadeIn-text">
+          <h2>Stool Table</h2>
+          <p>Perfect for lounge areas</p>
+        </div>
+      </div>
+      <div class="fadeDiv fadeIn-bottom-table">
+        <img class="water-color" src="https://s3.us-west-1.amazonaws.com/willow-park-images/WP-Watercolor-Conference-Table.jpg?v=1701351001">
+        <div class="fadeIn-text">
+          <h2>Conference Table</h2>
+          <p>Perfect for conference areas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="coming-soon" style="background-image:url(https://s3.us-west-1.amazonaws.com/willow-park-images/WP-Landing-Page-Wood-Grain.jpg?v=1701350996);">
+  <h2 class="h1">COMING JANUARY 3RD</h2>
+  <a href="">
+    <div class="sign-up-btn">Sign up For Updates</div>
+  </a>
+</div>
+<div style="display:flex;place-content:center;align-items:center;flex-direction:column;background:red;height:450px;">Footer</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

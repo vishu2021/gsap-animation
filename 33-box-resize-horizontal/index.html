@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by GSAP</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+#square {
+  background-color:black;
+  width:50px;
+  height:50px;
+}
+.big {
+  width:500px;
+}
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="square" id="square"></div>
+<!-- partial -->
+  <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script>
+  <script >
+
+timeline = gsap.timeline();
+
+timeline.to("#square",{duration:2, width: 500})
+  .to("#square",{duration:2, width: 50});
+  </script>
+
+</body>
+</html>

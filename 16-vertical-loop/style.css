@@ -1,0 +1,81 @@
+body {
+  font-family: system-ui;
+  background: #111;
+  color: white;
+  text-align: center;
+  height: 1000vh;
+}
+
+.container {
+  height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 20%;
+  width: 60%;
+  background: #555;
+  position: relative;
+  display: block;
+  align-items: center;
+  overflow: visible;
+}
+
+.carousel {
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  flex-shrink: 0;
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.prev {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+.next {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+}
+button {
+  padding: 1rem 2rem 1rem 2rem;
+  border: none;
+  background: #555;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.toggle {
+  position: absolute;
+  top: 10%;
+  display: none;
+}
+
+.show-overflow {
+  overflow: visible;
+}

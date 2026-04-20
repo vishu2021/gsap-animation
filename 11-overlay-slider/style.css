@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700|Roboto');
+
+body {
+    margin: 0;
+/*     overflow: hidden; */
+}
+
+.section {
+  position: relative;
+  height: 100svh;
+  background-color: #e7e5dd;
+}
+
+.slider {
+    position: relative;
+    min-height: 100svh;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+/*     z-index: 1; */
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.slide-content h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 8em;
+  margin-bottom: 0px;
+}
+
+.slide-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5em;
+  margin-top: 0px;
+}
+
+/* .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3498db;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+
+.slide + .slide::before {
+    background: #2980b9;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+} */

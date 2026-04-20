@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by GSAP</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav style="width:100%; position:fixed; background-color:#fff">
+  <ul style="display:flex;justify-content:space-around;">
+    <li style="cursor:pointer" onclick=goToSection(1)>
+      Section2
+    </li>
+    <li style="cursor:pointer" onclick=goToSection(2)>
+      Section3
+    </li>
+    <li style="cursor:pointer" onclick=goToSection(3)>
+      Section4
+    </li>
+  </ul>
+</nav>
+<section class="panel red">
+  <p>This is page 1</p>
+</section>
+<section class="panel green">
+  <p>This is page 2</p>
+</section>
+<section class="panel blue">
+  <p>This is page 3</p>
+</section>
+<section class="panel orange">
+  <p>This is page 4</p>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollToPlugin.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

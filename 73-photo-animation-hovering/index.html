@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Photo animation when hovering over text | GSAP, SplitText</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="main">
+    <div class="smooth-wrapper">
+      <div id="smooth-content">
+        <section class="about">
+          <div class="about-subtitle">agenda</div>
+          <div class="about-text" split-lines>
+          In two days, you’ll get tons of useful information and <span class="about-hover"> practical skills <span class="about-img"><img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/conference/about_1.jpg" alt="developing"></span></span> from professional mentors about setting goals, developing imagination, forming your own <span class="about-hover">point of view, <span class="about-img"><img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/conference/about_2.jpg" alt="developing"></span></span> and also setting up a workflow.
+        </div>
+          <div class="about-down">
+            <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/conference/arrow_down.svg" alt="">
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://assets.codepen.io/16327/SplitText3.min.js'></script>
+<script src='https://assets.codepen.io/16327/ScrollSmoother.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

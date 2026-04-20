@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+}
+.selector {
+  width: fit-content;
+  margin: 10px;
+  background: #222;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  color: #0099ac;
+  font-family: "Arial";
+}
+button {
+  margin: 10px;
+  background: #0099ac;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  font-family: "Arial";
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html,body {
+  height: 100%;
+  background-color: #b8ffff;
+}
+
+p {
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  margin: 0;
+  background-color: #fff;
+  padding: 10px ;
+  width: 100%;
+
+}
+.ball {
+  background-color: #000;
+  border-radius: 50%;
+  height: 0;
+  width: 0;
+  display: inline-block;
+}
+.red {
+  background-color: #CF1111;
+}
+.green {
+  background-color:#0AB06B;
+}
+.blue {
+  background-color: #307FE2;
+}
+.wrap { 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}

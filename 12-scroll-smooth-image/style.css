@@ -1,0 +1,35 @@
+body,
+html {
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+#triggerButton {
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+section {
+  height: 100vh;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.black {
+  background-color: black;
+}
+
+.background {
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}

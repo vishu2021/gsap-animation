@@ -1,0 +1,33 @@
+body {
+  overflow: hidden;
+}
+
+.green {
+  color:#0ae448;
+  background: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+body {
+  height: 100vh;
+}
+
+div {
+  font-size: 3rem;
+  height: 100px;
+}
+
+#intro {
+  font-size: 3.5rem;
+}
+
+#gsap {
+  transform: translateX(145px)
+}

@@ -1,0 +1,39 @@
+html { scroll-behavior: auto !important; }
+html, body {
+margin:0;
+padding:0;
+}
+#brx-content {
+    flex: 1;
+    position: relative;
+    width: 100%;
+}
+.sezione-primaria {
+    align-self: center !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+margin:0;
+}
+.brxe-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#home-sec-1 {
+  background-color: red;
+}
+#home-sec-2 {
+  background-color: blue;
+}
+#home-sec-3 {
+  background-color: green;
+}
+#home-sec-4 {
+  background-color: yellow;
+}

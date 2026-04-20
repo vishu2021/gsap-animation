@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Overlay Slider GSAP</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- <div class="section"></div> -->
+<div class="slider">
+        <div class="slide" style="background-color:#52190f; z-index: 2; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);">
+            <div class="slide-content">
+                <h1>One</h1>
+                <p>01</p>
+            </div>
+        </div>
+        <div class="slide" style="background-color:#502f75; z-index: 1; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);">
+            <div class="slide-content">
+                <h1>Two</h1>
+                <p>02</p>
+            </div>
+        </div>
+  <div class="slide" style="background-color:#226bc3; z-index: 0; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);">
+            <div class="slide-content">
+                <h1>Three</h1>
+                <p>03</p>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+<!-- partial -->
+  <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

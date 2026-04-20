@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Montserrat";
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 20px;
+}
+.grid .item {
+  cursor: pointer;
+}
+
+.content {
+  background: #39D9DF;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  height: auto;
+}
+.content .text-wrapper {
+  height: 0;
+  overflow: hidden;
+}
+.content .text-wrapper.visible {
+  height: auto;
+}
+.content p {
+  visibility: hidden;
+  opacity: 0;
+}
+.content p.visible {
+  visibility: visible;
+  opacity: 1;
+}

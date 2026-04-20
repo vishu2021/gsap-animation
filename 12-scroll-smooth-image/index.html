@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Scroll Smoother - Image Jumping when Effects = True</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header><button id="triggerButton">Turn on Scroll Smoother Effects</button></header>
+<div id="smooth-wrapper" ref="wrapper">
+  <div id="smooth-content" ref="content">
+    <section class="black hero">
+
+      <div class="background layer">
+
+        <img class="parallax-image" src="https://assets.codepen.io/6039546/Pentium-Water-Home-Hero-scaled.jpg" alt="" rel="preload" />
+
+      </div>
+      <div class="overlay layer"></div>
+    </section>
+    <section class="pink"></section>
+    <section></section>
+
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+<script src='https://assets.codepen.io/16327/ScrollSmoother.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

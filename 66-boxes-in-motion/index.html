@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Box in Motion</title>
+   <style>
+    .box1, .box2 {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+}
+
+.box2 {
+  background-color: red;
+}
+button {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+   </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box1"></div>
+<div class="box2"></div>
+
+<button onClick="speedUpBlue()">Speed up blue box</button>
+<button onClick="speedUpBlueDelay()">Increase delay between blue box and red box</button>
+<button onClick="speedUpRed()">Speed up red box</button>
+<button onClick="speedUpRedDelay()">Increase delay between red box and blue box</button>
+<!-- partial -->
+  <script src='gsap.min.js'></script>
+  <script >
+let tl = gsap.timeline({ 
+  repeat: -1,
+  //smoothChildTiming: true // if you want to allow on-the-fly smooth adjustments, but that also means shifting the startTime (logically that'd be necessary)
+});
+let blue = gsap.to('.box1', { x: 500, duration: 2 });
+let red = gsap.to('.box2', { x: 500, duration: 2 });
+
+tl.add(red, 2);
+
+tl.add(blue, "+=2");
+
+function speedUpBlue() {
+  blue.timeScale(blue.timeScale() * 2);
+}
+
+function speedUpRed() {
+  red.timeScale(red.timeScale() * 2);
+}
+
+function speedUpBlueDelay() {
+  blue.startTime(blue.startTime() + 2)
+}
+
+function speedUpRedDelay() {
+  red.startTime(red.startTime() + 2);
+}
+
+  </script>
+
+</body>
+</html>

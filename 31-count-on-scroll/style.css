@@ -1,0 +1,13 @@
+body{
+  background-color:grey;
+  text-align:center;
+  height:4000px;
+  margin:0;
+}
+
+#numbers{
+  font-size:25vw;
+  font-family:sans-serif;
+  font-weight:600;
+  color: #444444;
+}

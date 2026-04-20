@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Mousemove mirror effect  | GSAP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+   <a href="#" class="header-logo">
+      <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/logo.svg" alt="">
+   </a>
+   <div class="header-menu">
+      <a href="#" class="header-item">about</a>
+      <a href="#" class="header-item">works</a>
+      <a href="#" class="header-item">blog</a>
+   </div>
+   <button class="header-burger">
+      <span></span>
+      <span></span>
+   </button>
+</header>
+
+<div class="cursor">
+   <button class="wonderland-cursor">
+     watch full series
+     <svg viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.1047 6.08511L11 7.05319L5.5 13L1.02459e-06 7.05319L0.895301 6.08511L4.86046 10.3723L4.86046 -1.02689e-06L6.13953 -1.01163e-06L6.13953 10.3723L10.1047 6.08511Z" fill="white"/>
+</svg>
+
+  </button>
+</div>
+
+<main class="main">
+  <div class="smooth-wrapper">
+    <div id="smooth-content">
+      <section id="hero" class="hero">
+        <button id="close-collection" class="hero-close">Back</button>
+        <div class="wonderland">
+          <h1 class="wonderland-title">wonderland</h1>
+          <div class="wonderland-line line-stroke">
+            <div class="line-stroke__wrapp">
+              <div class="line-stroke__item line-stroke__1">
+                <div>wonderland photo collection / she lost land.</div>
+                <div>wonderland photo collection / she lost land.</div>
+                <div>wonderland photo collection / she lost land.</div>
+              </div>
+              <div class="line-stroke__item line-stroke__2">
+                <div>wonderland photo collection / she lost land.</div>
+                <div>wonderland photo collection / she lost land.</div>
+                <div>wonderland photo collection / she lost land.</div>
+              </div>
+            </div>
+          </div>
+          <div class="wonderland-descr" split-lines>There have always been a strong connection between humanity and nature. In this photo collection. I`ve tried to show this constant and indissoluble unity between us.</div>
+          <button class="wonderland-full">watch full series</button>
+        </div>
+        <div class="banner mirror-wrapp">
+          <div class="banner-img">
+            <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+          </div>
+          <div class="mirror">
+            <div class="mirror-main">
+              <div class="mirror-item mirror-left">
+                <div class="mirror-img mirror-img__mask">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                </div>
+                <div class="mirror-img">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                </div>
+              </div>
+              <div class="mirror-item mirror-center">
+                <div class="mirror-img mirror-img__mask">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                </div>
+                <div class="mirror-img">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                </div>
+              </div>
+              <div class="mirror-item mirror-right">
+                <div class="mirror-img mirror-img__mask">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                </div>
+                <div class="mirror-img">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="mirror-additional">
+              <div class="mirror-item mirror-over mirror-over__left">
+                <div class="mirror-img mirror-img__left">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                  <div class="mirror-light"></div>
+                </div>
+                <div class="mirror-img mirror-img__main">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                </div>
+                <div class="mirror-img mirror-img__right">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                  <div class="mirror-light"></div>
+                </div>
+              </div>
+              <div class="mirror-item mirror-over mirror-over__center">
+                <div class="mirror-img mirror-img__left">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                  <div class="mirror-light"></div>
+                </div>
+                <div class="mirror-img mirror-img__main">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                </div>
+                <div class="mirror-img mirror-img__right">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                  <div class="mirror-light"></div>
+                </div>
+              </div>
+              <div class="mirror-item mirror-over mirror-over__right">
+                <div class="mirror-img mirror-img__left">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                  <div class="mirror-light"></div>
+                </div>
+                <div class="mirror-img mirror-img__main">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                </div>
+                <div class="mirror-img mirror-img__right">
+                  <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+                  <div class="mirror-light"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner-info">
+            <div class="banner-title">She.silent</div>
+            <div class="banner-left">
+              <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/wonderland/banner.jpg" alt="">
+              <div class="banner-social">
+                <a href="#" class="banner-social__item">Instagram</a>
+                <a href="#" class="banner-social__item">Twitter</a>
+                <a href="#" class="banner-social__item">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="bottom-info" class="bottom-info">
+        <div class="bottom-info__descr">1/2 series. The lost land</div>
+        <div class="bottom-info__social">
+          <a href="#" class="bottom-info__item">Instagram</a>
+          <a href="#" class="bottom-info__item">Twitter</a>
+          <a href="#" class="bottom-info__item">Facebook</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://assets.codepen.io/16327/SplitText3.min.js'></script>
+<script src='https://assets.codepen.io/16327/ScrollSmoother.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

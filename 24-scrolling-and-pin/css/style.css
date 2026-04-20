@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  --main: #0099ff;
+  --bg: #ffffff;
+  --color: #3d3c3c;
+  --color_light: #ffffff;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+.filler {
+  height: 40px;
+}
+@media (min-width: 992px) {
+  .filler {
+    height: 60px;
+  }
+}
+@media (min-width: 1400px) {
+  .filler {
+    height: 80px;
+  }
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+.c_timeline .intro_section .img-wrap {
+  display: block;
+  position: relative;
+  width: 80%;
+  padding-bottom: 65%;
+}
+@media (min-width: 992px) {
+  .c_timeline .intro_section .img-wrap {
+    width: 70%;
+    padding-bottom: 60%;
+  }
+}
+.c_timeline .intro_section .img-wrap > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.c_timeline .gradient-top {
+  background: linear-gradient(to bottom, var(--main) 50%, rgba(0, 0, 0, 0) 100%);
+  z-index: 5;
+}
+.c_timeline .gradient-bottom {
+  background: linear-gradient(to top, var(--main) 50%, rgba(0, 0, 0, 0) 100%);
+  transform: translateY(-100%);
+  z-index: 5;
+}
+.c_timeline .pin-spacer:has(.gradient-bottom) {
+  height: 0 !important;
+}
+.c_timeline .gradient-bottom-2 {
+  background: linear-gradient(to top, var(--main) 50%, rgba(0, 0, 0, 0) 100%);
+  z-index: 5;
+  position: relative;
+}
+.c_timeline .marker-wrapper .marker:before {
+  content: "";
+  background: var(--color_light);
+  position: absolute;
+  width: 22px;
+  transform: translateX(-11px);
+  left: 50%;
+  height: 3000px;
+  bottom: 8px;
+  z-index: 1;
+  opacity: 0.1;
+}
+@media (min-width: 992px) {
+  .c_timeline .marker-wrapper .marker:before {
+    width: 36px;
+    transform: translateX(-18px);
+  }
+}
+@media (min-width: 1200px) {
+  .c_timeline .marker-wrapper .marker:before {
+    width: 44px;
+    transform: translateX(-22px);
+  }
+}
+@media (min-width: 1400px) {
+  .c_timeline .marker-wrapper .marker:before {
+    width: 66px;
+    transform: translateX(-33px);
+  }
+}
+.c_timeline .milestones-wrap ul.milestones {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}

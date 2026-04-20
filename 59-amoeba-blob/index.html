@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Old blog anim</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="loading_cont">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <linearGradient id="MyGradient" x1="0%" y1="0%" x2="100%" y2="50%">
+          <stop offset="9.44%" stop-color="#FF1DAE"/>
+          <stop offset="34.39%" stop-color="#FF1744"/>
+          <stop offset="80%"  stop-color="#3329FF"/>
+      </linearGradient>
+    </defs>
+    <mask id="maska">
+      <g class="blobs">
+        <circle class="blob" cx="440" cy="250" r="30" transform="rotate(0) translate(0, 0) rotate(0)"/>
+        <circle class="blob" cx="500" cy="320" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+        <circle class="blob" cx="300" cy="390" r="40"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+        <circle class="blob" cx="380" cy="390" r="80"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+        <circle class="blob" cx="470" cy="450" r="20"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+      </g>
+    </mask>
+    <rect x="200" y="200"  mask="url(#maska)" fill="url(#MyGradient)" width="400" height="400">
+  </svg>  
+</div>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

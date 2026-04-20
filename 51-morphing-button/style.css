@@ -1,0 +1,56 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+svg {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  pointer-events: all;
+}
+
+#svg2 {
+  pointer-events: all;
+}
+
+.active-svg {
+  width: 90vw;
+  height: 90vh;
+  pointer-events: all;
+  z-index: 100;
+}
+
+#menu,
+#intermediate {
+  visibility: hidden;
+}
+
+#menu,
+#circle,
+#intermediate {
+  pointer-events: none;
+}
+
+#menu {
+  transition: transform 2s ease-in-out;
+  transform-origin: center bottom; /* Adjust as needed */
+}
+
+.menu-active {
+  transform: scaleX(calc(90vw / originalWidth))
+    scaleY(calc(90vh / originalHeight));
+}
+
+.nav-menu {
+  position: fixed;
+  top: 5%; /* Adjust based on your design */
+  left: 5%;
+  width: 90vw;
+  height: 90vh;
+  display: none; /* Hidden initially */
+  /* Add more styling as needed */
+}

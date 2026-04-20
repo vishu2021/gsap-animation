@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Vertically Draggable Modal</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="modal-is-open">
+  <button class="open-modal" id="openModal"  >Open Modal</button>
+<!-- partial:index.partial.html -->
+<div class="modal-container open" id="modalContainer">
+  <div class="modal-card small-detent"> 
+    <header class="compact-menu-header">
+      <h3>Dragg Me Vertically</h3>
+      <div class="grabber" style="touch-action: pan-x;"></div>
+      <button class="close toggle" id="closeModal" style="touch-action: pan-x;">Close Modal</button>
+    </header>
+    <div class="modal-inner hide-scrollbar" id="content1" style="display: block;">
+      <div class="modal-header">
+        <i class="svgbg icon-info"></i>
+        <h2>Modal Title</h2>
+        <p>An introductory message. Some sort of explainer paragraph.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla elit purus, vehicula tristique orci lobortis nec. Nulla pharetra finibus interdum. Proin aliquet odio eu nibh tincidunt, vitae eleifend lacus sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at arcu tortor. Nam cursus nulla nec urna suscipit molestie. Nam accumsan sagittis diam in varius. Praesent est velit, laoreet in cursus eu, sagittis eget metus.</p>
+        <p>Integer finibus, lorem ut luctus luctus, nunc odio ultrices tortor, et fermentum libero nunc faucibus purus. In mattis dui non rutrum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis et posuere orci. Morbi vehicula massa ante, ut tristique risus finibus et. Aenean in lectus accumsan ante venenatis vehicula. Vivamus hendrerit lectus sit amet aliquam cursus. Nullam laoreet neque a lorem egestas, vel sollicitudin leo gravida. Curabitur at suscipit justo. Nulla vel neque quam. Quisque tempus finibus porttitor. Nunc ut mauris in lorem suscipit sollicitudin. Morbi at enim quis elit venenatis sodales eu a orci. Sed mattis erat enim, sed ullamcorper neque tincidunt vitae. Praesent non vehicula eros.</p>
+      </div>
+      <!-- <div class="modal-buttons equal center">
+        <button class="btn">Do the thing</button>
+        <button class="btn discourage">Dismiss</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src="gsap.min.js"></script>
+  <script src="draggable.min.js"></script>
+  <script  src="./script.js"></script> 
+</body>
+</html>

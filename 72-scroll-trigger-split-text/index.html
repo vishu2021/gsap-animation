@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Full screen slider | HTML5, CSS3, GSAP, ScrollTrigger, SplitText, ScrollSmoother, Observer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="preloader" class="preloader">
+  <div class="preloader-main">
+    <div class="preloader-wrapp">
+      <div class="preloader-img" id="preloader-1">
+        <svg width="159" height="36" viewBox="0 0 159 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" fill="#131313"/>
+          <path d="M18 0L25.1276 10.8724L36 18L25.1276 25.1276L18 36L10.8724 25.1276L0 18L10.8724 10.8724L18 0Z" fill="#FFFAF6"/>
+          <g clip-path="url(#clip0_29_129)">
+          <rect x="41" width="36" height="36" fill="#131313"/>
+          <path d="M71.7279 5.27211L77 18L71.7279 30.728L59 36L46.2721 30.728L41 18L46.2721 5.27211L59 3.29134e-05L71.7279 5.27211Z" fill="#FFFAF6"/>
+          </g>
+          <g clip-path="url(#clip1_29_129)">
+          <rect x="82" width="36" height="36" fill="#FFFAF6"/>
+          <rect x="82" width="6" height="6" fill="black"/>
+          <rect x="112" width="6" height="6" fill="black"/>
+          <rect x="112" y="30" width="6" height="6" fill="black"/>
+          <rect x="82" y="30" width="6" height="6" fill="black"/>
+          </g>
+          <rect x="123" width="36" height="36" fill="#131313"/>
+          <circle cx="141" cy="18" r="17" fill="#FFFAF6"/>
+          <defs>
+          <clipPath id="clip0_29_129">
+          <rect width="36" height="36" fill="white" transform="translate(41)"/>
+          </clipPath>
+          <clipPath id="clip1_29_129">
+          <rect width="36" height="36" fill="white" transform="translate(82)"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="preloader-img" id="preloader-2">
+        <svg width="159" height="36" viewBox="0 0 159 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="41" width="36" height="36" fill="#131313"/>
+          <path d="M59 0L66.1276 10.8724L77 18L66.1276 25.1276L59 36L51.8724 25.1276L41 18L51.8724 10.8724L59 0Z" fill="#FFFAF6"/>
+          <g clip-path="url(#clip0_29_150)">
+          <rect width="36" height="36" fill="#131313"/>
+          <path d="M30.7279 5.27211L36 18L30.7279 30.728L18 36L5.27208 30.728L-2.26823e-07 18L5.27208 5.27211L18 3.29134e-05L30.7279 5.27211Z" fill="#FFFAF6"/>
+          </g>
+          <g clip-path="url(#clip1_29_150)">
+          <rect x="123" width="36" height="36" fill="#FFFAF6"/>
+          <rect x="123" width="6" height="6" fill="black"/>
+          <rect x="153" width="6" height="6" fill="black"/>
+          <rect x="153" y="30" width="6" height="6" fill="black"/>
+          <rect x="123" y="30" width="6" height="6" fill="black"/>
+          </g>
+          <rect x="82" width="36" height="36" fill="#131313"/>
+          <circle cx="100" cy="18" r="17" fill="#FFFAF6"/>
+          <defs>
+          <clipPath id="clip0_29_150">
+          <rect width="36" height="36" fill="white"/>
+          </clipPath>
+          <clipPath id="clip1_29_150">
+          <rect width="36" height="36" fill="white" transform="translate(123)"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="preloader-img" id="preloader-3">
+        <svg width="159" height="36" viewBox="0 0 159 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="123" width="36" height="36" fill="#131313"/>
+          <path d="M141 0L148.128 10.8724L159 18L148.128 25.1276L141 36L133.872 25.1276L123 18L133.872 10.8724L141 0Z" fill="#FFFAF6"/>
+          <g clip-path="url(#clip0_29_167)">
+          <rect x="82" width="36" height="36" fill="#131313"/>
+          <path d="M112.728 5.27211L118 18L112.728 30.728L100 36L87.2721 30.728L82 18L87.2721 5.27211L100 3.29134e-05L112.728 5.27211Z" fill="#FFFAF6"/>
+          </g>
+          <g clip-path="url(#clip1_29_167)">
+          <rect width="36" height="36" fill="#FFFAF6"/>
+          <rect width="6" height="6" fill="black"/>
+          <rect x="30" width="6" height="6" fill="black"/>
+          <rect x="30" y="30" width="6" height="6" fill="black"/>
+          <rect y="30" width="6" height="6" fill="black"/>
+          </g>
+          <rect x="41" width="36" height="36" fill="#131313"/>
+          <circle cx="59" cy="18" r="17" fill="#FFFAF6"/>
+          <defs>
+          <clipPath id="clip0_29_167">
+          <rect width="36" height="36" fill="white" transform="translate(82)"/>
+          </clipPath>
+          <clipPath id="clip1_29_167">
+          <rect width="36" height="36" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="preloader-img" id="preloader-4">
+        <svg width="159" height="36" viewBox="0 0 159 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="82" width="36" height="36" fill="#131313"/>
+          <path d="M100 0L107.128 10.8724L118 18L107.128 25.1276L100 36L92.8724 25.1276L82 18L92.8724 10.8724L100 0Z" fill="#FFFAF6"/>
+          <g clip-path="url(#clip0_29_184)">
+          <rect x="123" width="36" height="36" fill="#131313"/>
+          <path d="M153.728 5.27211L159 18L153.728 30.728L141 36L128.272 30.728L123 18L128.272 5.27211L141 3.29134e-05L153.728 5.27211Z" fill="#FFFAF6"/>
+          </g>
+          <g clip-path="url(#clip1_29_184)">
+          <rect x="41" width="36" height="36" fill="#FFFAF6"/>
+          <rect x="41" width="6" height="6" fill="black"/>
+          <rect x="71" width="6" height="6" fill="black"/>
+          <rect x="71" y="30" width="6" height="6" fill="black"/>
+          <rect x="41" y="30" width="6" height="6" fill="black"/>
+          </g>
+          <rect width="36" height="36" fill="#131313"/>
+          <circle cx="18" cy="18" r="17" fill="#FFFAF6"/>
+          <defs>
+          <clipPath id="clip0_29_184">
+          <rect width="36" height="36" fill="white" transform="translate(123)"/>
+          </clipPath>
+          <clipPath id="clip1_29_184">
+          <rect width="36" height="36" fill="white" transform="translate(41)"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-wrapp">
+    <div class="header-logo">
+      TL/E
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0H0V6.5V13H6.5H13V6.5V0H6.5ZM6.5 0L3.92613 3.92613L0 6.5L3.92613 9.07387L6.5 13L9.07387 9.07387L13 6.5L9.07387 3.92613L6.5 0Z" fill="#131313"/>
+      </svg>
+    </div>
+    <div class="header-search">Search</div>
+    <div class="header-menu">
+      <a href="#" class="header-menu__item header-link">Product</a>
+      <a href="#" class="header-menu__item header-link">Collection</a>
+      <a href="#" class="header-menu__item header-link">3d model</a>
+    </div>
+    <a href="#" class="header-contact header-link">Contact</a>
+    <a href="#" class="header-cart header-link">Cart (0)</a>
+  </div>
+</header>
+
+<main>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <section class="banner">
+        <div class="banner-mask"></div>
+        <div class="banner-text split">Inspired Tiling Solutions</div>
+        <div class="banner-title split">Your home, your reflect/on.</div>
+        <div class="banner-descr split">Tile Emporium offers premium tiles for your home. Durable, versatile and beautiful options for floor and wall. Expert help available. Shop online or in-store. Start your renovation now.</div>
+      </section>
+
+      <section class="collection">
+        <div class="collection-mask"></div>
+        <div class="slider">
+          <div class="slider-wrapp">
+            <div class="slider-img">
+              <img class="" src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/tle/luminous.jpg" alt="">
+              <div class="slider-gradient"></div>
+            </div>
+            <div class="slider-img active">
+              <img class="" src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/tle/celestial.jpg" alt="">
+              <div class="slider-gradient"></div>
+            </div>
+          </div>
+          
+          <div class="slider-descr">Our Exquisite Collection of Tiles</div>
+          <div class="slider-title">
+            <div class="slider-title__item">Luminous Vista</div>
+            <div class="slider-title__item"></div>
+            <div class="slider-title__item">Celestial Symphony</div>
+          </div>
+          <div class="slider-numeric">
+            <div class="slider-numeric__active">
+              <div class="slider-numeric__item">01</div>
+              <div class="slider-numeric__item">02</div>
+            </div>
+            -
+            <div class="slider-numeric__total">02</div>
+          </div>
+        </div>
+  </section>
+    </div>
+  </div>
+</main>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+<script src='https://assets.codepen.io/16327/ScrollSmoother.min.js'></script>
+<script src='https://assets.codepen.io/16327/SplitText3.min.js'></script>
+<script src='https://assets.codepen.io/16327/CustomEase3.min.js'></script>
+<script src='https://unpkg.com/gsap/dist/Observer.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

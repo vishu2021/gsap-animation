@@ -1,0 +1,98 @@
+body {
+  background: white;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+#scrollAnimation {
+  overflow: hidden;
+  min-height: 6000px;
+}
+.zoom {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 280px;
+}
+.zoom h1 {
+  font-size: 5.8rem;
+  color: #907258;
+}
+.subHeader {
+  margin-top: 20px;
+  font-size: 32px;
+  color: #907258;
+  display: flex;
+  align-items: baseline;
+}
+.paragraph {
+  display: inline-block;
+}
+.period {
+  background-color: #907258;
+  height: 3px;
+  width: 3px;
+}
+.svgContainer {
+  margin-left: 895px;
+  width: 1714px;
+  height: 2417px;
+}
+#mySVG {
+  z-index: 1;
+  margin-top: -39px;
+  position: relative;
+}
+.fadeDiv {
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+  text-align: center;
+}
+.fadeIn-text {
+  color: #907258;
+}
+.water-color {
+  width: 100%;
+}
+.fadeIn-top-table {
+  top: 110px;
+  width: 775px;
+  margin-left: 340px;
+}
+.fadeIn-stool {
+  top: 993px;
+  margin-left: 1077px;
+  width: 290px;
+}
+.fadeIn-stool .fadeIn-text {
+  margin-top: 65px;
+}
+.fadeIn-bottom-table {
+  width: 773px;
+  top: 2165px;
+  margin-left: 914px;
+}
+.coming-soon {
+  height: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-size: cover;
+}
+.coming-soon h2 {
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+.coming-soon .sign-up-btn {
+  background: #7ac79b;
+  border-radius: 50px;
+  padding: 10px 45px;
+  margin-top: 20px;
+}

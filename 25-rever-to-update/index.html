@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - revertOnUpdate demo</title> 
+  <style>
+  body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #222;
+  }
+  button{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #222;
+    background-color: #fff;
+    display: block;
+    outline: 0;
+    margin: 30px auto;
+    padding: 10px 30px;
+    cursor: pointer; 
+    border-radius: 10px;
+    transition: 0.5s all ease;
+  }
+  button:hover {
+    opacity: 0.8; 
+  } 
+  .app {
+  padding: 10px;
+  }
+
+  
+  .box {
+    background: #d4d9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; 
+    font-size: 22px;
+    font-weight: 600;
+    height: 100px;
+    text-transform: capitalize;
+    margin: 100px auto;
+  }
+  .circle {
+    background: #baffc1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 600;
+    height: 200px;
+    text-transform: capitalize;
+    margin: auto;
+  }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="root" class="panel center text-center"></div> 
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>

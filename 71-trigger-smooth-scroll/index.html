@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Animation Scroll for Vsimdim | GSAP (ScrollTrigger, SmoothScroll, SplitText)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lexend+Deca:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body class="overflow-hidden">
+  <svg class="hidden" width="0" height="0">
+    <defs></defs>
+  </svg>
+  <div id="preloader"></div>
+  <header class="header">
+    <div class="header-main">
+      <div class="header-logo header-item">v-d</div>
+      <div class="header-lang header-item">ua</div>
+    </div>
+    <div class="header-slogan" split-lines>Ukrainians deserve decent housing, <br> even in dire circumstances</div>
+    <div class="header-menu">menu</div>
+  </header>
+
+  <main class="smooth-wrapper">
+    <div id="smooth-content">
+      <section class="hero paddingX">
+        <div class="hero-translate">
+          <div class="hero-title-wrapp">
+            <div class="hero-title-rect">
+              <div class="radius radius-bottom radius-left radius-transform-y"></div>
+              <div class="radius radius-top radius-right radius-transform-x"></div>
+            </div>
+
+            <h1 class="hero-title title up-text" split-chars>
+              Vsimdim
+            </h1>
+          </div>
+
+          <div class="hero-img">
+            <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/vsimdim/hero/hero.jpg" alt="Vsimdim"/>
+          </img>
+          <div class="hero-date">2022</div>
+        </div>
+      </section>
+
+      <section class="make paddingX">
+        <div class="make-subtitle">we make</div>
+        <div class="make-main">
+          <div class="make-text title-h2 up-text" split-lines>Mobile <br> boots for those</div>
+          <div class="make-text title-h2 up-text" split-lines> who have spent time through war</div>
+        </div>
+
+        <div class="make-gallery paddingX">
+          <div class="gallery-wrapp gallery-wrapp__left">
+            <div class="gallery-main">
+              <div class="gallery-item__rect">
+                <div class="radius radius-bottom radius-right radius-transform-y"></div>
+                <div class="radius radius-top radius-left radius-transform-x-reverse"></div>
+              </div>
+              <div class="gallery-item">
+                <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/vsimdim/gallery/gallery-1-new.jpg" alt="Gallery image">
+              </div>
+            </div>
+          </div>
+          <div class="gallery-wrapp gallery-wrapp__big">
+            <div class="gallery-main">
+              <div class="gallery-item__rect">
+                <div class="radius radius-top radius-left radius-transform-y-reverse"></div>
+                <div class="radius radius-bottom radius-right radius-transform-x"></div>
+              </div>
+              <div class="gallery-item">
+                <img src="https://zajno-storage0.s3.us-west-1.amazonaws.com/dev/codepen/vsimdim/gallery/gallery-2-new.jpg" alt="Gallery image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://assets.codepen.io/16327/SplitText3.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+<script src='https://assets.codepen.io/16327/ScrollSmoother.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
